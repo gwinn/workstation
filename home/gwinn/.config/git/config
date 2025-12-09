@@ -9,7 +9,7 @@
 	editor = vim
 	pager = delta
 	autocrlf = input
-	excludesfile = ./ignore
+	excludesfile = /Users/gwinn/.config/git/ignore
 [help]
 	autocorrect = true
 [http]
@@ -80,3 +80,5 @@
 	type = cat-file -t
 	dump = cat-file -p
 
+[safe]
+	directory = /Users/gwinn/Sources

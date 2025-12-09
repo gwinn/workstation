@@ -17,10 +17,14 @@ Compiled source #
 *.iso
 *.rar
 *.tar
+*.zip
+*.bz2
+*.gz
 
-# # Logs and databases #
+# Logs and databases #
 # ######################
 *.log
+*.db
 
 # # OS generated files #
 # ######################
@@ -52,3 +56,11 @@ Debug
 .vscode
 .vscode/*
 .cache
+db/
+
+# Docker
+docker-compose.override.yml
+compose.override.yml
+docker-compose.override.yaml
+compose.override.yaml
+db-postgres-data

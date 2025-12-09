@@ -14,7 +14,6 @@ fpath=(~/.local/share/zsh/completion $fpath)
 fpath=(~/.local/share/zsh/functions $fpath)
 
 autoload -Uz compinit promptinit vcs_info git_info ssh_info colors && colors
-compinit -d ~/.cache/zsh/zcompdump
 . ~/.local/share/zsh/scripts/fzf-tab/fzf-tab.plugin.zsh
 promptinit
 
@@ -77,3 +76,6 @@ alias ncdu='ncdu --color off -e'
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
 eval "$(rbenv init -)"
+
+compinit -d ~/.cache/zsh/zcompdump
+
