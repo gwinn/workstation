@@ -3,14 +3,12 @@ return {
 	dependencies = {
 		"rcarriga/nvim-dap-ui",
 		"nvim-neotest/nvim-nio",
-		"leoluz/nvim-dap-go",
 	},
 	config = function()
 		local dap, dapui = require("dap"), require("dapui")
 		local keymap = vim.keymap
 
 		dapui.setup()
-		require("dap-go").setup()
 
 		-- ui
 		dap.listeners.before.attach.dapui_config = function()

@@ -22,4 +22,4 @@ Basic setup based on Tmux, Neovim & Zsh. List below is plugins & tools used by t
 * [exiftool](https://github.com/exiftool/exiftool)
 * [lesspipe.sh](https://github.com/wofr06/lesspipe)
 * [xsv](https://github.com/BurntSushi/xsv)
-
+* [urlview](https://github.com/sigpipe/urlview)

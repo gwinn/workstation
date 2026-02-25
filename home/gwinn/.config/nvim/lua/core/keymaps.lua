@@ -1,11 +1,7 @@
 local keymap = vim.keymap
+local buf = vim.lsp.buf
 
 vim.g.mapleader = ","
-
-keymap.set("i", "<C-a>", "<ESC>I")
-keymap.set("i", "<C-e>", "<ESC>A")
-keymap.set("n", "<C-a>", "<ESC>^")
-keymap.set("n", "<C-e>", "<ESC>$")
 
 keymap.set("n", "<c-h>", ":wincmd h<CR>")
 keymap.set("n", "<c-j>", ":wincmd j<CR>")
@@ -14,3 +10,6 @@ keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+-- keymaps for help, go to definition, code actions & other
+keymap.set("n", "K", buf.hover, {})
+keymap.set("n", "gD", buf.declaration, {})
